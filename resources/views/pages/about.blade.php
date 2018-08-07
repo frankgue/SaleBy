@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <h2>C'est quoi <b>SaleBy</b> </h2>
-        <p>SaleBy est une plate forme de vente d'objets.</p>
+        <h2>C'est quoi <b>{{ config('app.name') }}</b> </h2>
+        <p>{{ config('app.name') }} est une plate forme de vente d'objets.</p>
         <p>
             Vous avez un objet que vous n'utilisez plus est qui vous encombre,
             debarrassez vous en en la publiant sur cette plateforme, vous aurez beaucoup
@@ -26,7 +26,7 @@
 
         <hr>
 
-        <h2>Quels sont les differents services offert par <b>SaleBy</b>? </h2>
+        <h2>Quels sont les differents services offert par <b>{{ config('app.name') }}</b>? </h2>
         <p>Bavarder bavader.</p>
         <ul>
             <li>Vendre</li>

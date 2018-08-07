@@ -3,7 +3,7 @@
 if(! function_exists('page_title')){
     function page_title($title){
 
-        $base_title = 'SaleBy - Vendre et Acheter';
+        $base_title = config('app.name') .' - Vendre et Acheter';
 
         if ($title === '') {
             return $base_title;
