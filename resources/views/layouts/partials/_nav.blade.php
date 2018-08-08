@@ -14,8 +14,8 @@
           <ul class="nav navbar-nav">
             <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Home</a></li>
             <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#salers">Salers</a></li>
+            <li class="{{ set_active_route('services_path') }}"><a href="{{ route('services_path') }}">Services</a></li>
+            <li class="{{ set_active_route('salers_path') }}"><a href="{{ route('salers_path') }}">Salers</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
               aria-haspopup="true" aria-expanded="false">Articles <span class="caret"></span></a>
@@ -29,7 +29,7 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="#salers">Contact</a></li>
+            <li class="{{ set_active_route('contact_path') }}"><a href="{{ route('contact_path') }}">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <li><a href="#salers">Login</a></li>

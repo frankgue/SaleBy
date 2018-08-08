@@ -17,3 +17,18 @@ Route::get('/', [
 ]);
 
 Route::get('/about', 'PagesController@about')->name('about_path');
+
+Route::get('/contact', [
+    'as' => 'contact_path',
+    'uses' => 'ContactController@create'
+]);
+
+Route::get('/services', [
+    'as' => 'services_path',
+    'uses' => 'PagesController@services'
+]);
+
+Route::get('/salers', [
+    'as' => 'salers_path',
+    'uses' => 'SalersController@create'
+]);
